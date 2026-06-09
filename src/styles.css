@@ -1988,3 +1988,14 @@ ul {
 .role-chip.selected.chip--tec svg {
   color: var(--clr-ocean);
 }
+
+/* Custom App Container to handle layout spacing and avoid overlapping with RoleSwitcher */
+.app-container--padded {
+  padding-top: 130px !important;
+}
+@media (max-width: 640px) {
+  .app-container--padded {
+    padding-top: 110px !important;
+  }
+}
+

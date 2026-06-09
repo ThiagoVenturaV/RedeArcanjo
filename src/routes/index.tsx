@@ -28,7 +28,7 @@ function Index() {
   const activeView = useStore((s) => s.activeView);
 
   return (
-    <div className="min-h-screen bg-background pt-24">
+    <div className={`min-h-screen bg-background ${activeView !== "hero" ? "app-container--padded" : ""}`}>
       <RoleSwitcher />
       <AnimatePresence mode="wait">
         <motion.main

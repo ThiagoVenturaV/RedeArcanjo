@@ -127,15 +127,25 @@ export function HeroView() {
             </a>
           </li>
         </ul>
-        <button
-          onClick={() => setActiveView("signup")}
-          id="nav-cta"
-          className="nav__cta"
-          role="button"
-          aria-label="Fazer parte da rede"
-        >
-          Fazer Parte
-        </button>
+        <div className="nav__actions">
+          <button
+            onClick={() => setActiveView("login")}
+            className="nav__login"
+            role="button"
+            aria-label="Entrar na rede"
+          >
+            Entrar
+          </button>
+          <button
+            onClick={() => setActiveView("signup")}
+            id="nav-cta"
+            className="nav__cta"
+            role="button"
+            aria-label="Fazer parte da rede"
+          >
+            Fazer Parte
+          </button>
+        </div>
         <button
           className="nav__hamburger"
           id="nav-hamburger"

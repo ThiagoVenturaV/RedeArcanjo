@@ -42,6 +42,8 @@ export function RoleSwitcher() {
   const { activeView, setActiveView } = useStore();
   const [open, setOpen] = useState(false);
 
+  if (activeView === "hero") return null;
+
   const current =
     items.find((i) => i.id === activeView) ?? authItems.find((i) => i.id === activeView);
 
